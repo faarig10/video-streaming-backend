@@ -1,6 +1,8 @@
 import mongoose from "mongoose";
 import { DB_NAME } from "../constants.js";
 
+// This function is to connect Database to Mongo DB using mongoose to ORM
+
 const connectDB = async () => {
   try {
     const connectionInstance = await mongoose.connect(
